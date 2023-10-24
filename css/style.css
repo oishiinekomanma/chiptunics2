@@ -13,7 +13,7 @@ body {
 a {
   transition: opacity .3s;
   text-decoration: none;
-  color: #b8892c;
+  color: #6a2cb8;
   font-weight: bold;
 }
 
@@ -24,8 +24,6 @@ img {
   border-style: none;
 }
 
-
-
 .pc-only {
   display: block;
 }
@@ -35,7 +33,7 @@ img {
 }
 
 .y-marker {
-  background: linear-gradient(transparent 50%, #ffce5b 50%);
+  background: linear-gradient(transparent 50%, #9dceff 50%);
 }
 
 /*--------------------------------
@@ -49,7 +47,11 @@ img {
   width: 100%/* 98% */;
   padding: 90px 0;
   margin: 0 auto/* 15px auto */;
-  background-color: #fff8cd;
+  background-color: #a3abff;
+}
+
+.pale {
+  background-color: #dddfff;
 }
 
 /*
@@ -75,6 +77,10 @@ img {
   text-align: center;
   letter-spacing: .05em;
   color: #333;
+}
+
+.white {
+  color:#EEE;
 }
 
 .lead {
@@ -159,10 +165,11 @@ img {
   align-items: center;
   justify-content: center;
   width: 100%/* 98% */;
-  height: 92vh;
+  height: 100vh;
   margin: 0 auto/* 15px auto */;
   text-align: center;
-  background-color:  #117eed;
+  background-color: #117eed;
+  background-image: url(../img/chiptunics2_edited3.png);
   background-size: cover;
   background-position: 50%;
 }
@@ -184,15 +191,17 @@ img {
   line-height: 1.2;
   margin-bottom: 25px;
   letter-spacing: .1em;
+  filter: drop-shadow(8px 8px #1583fa);
 }
 .mv-subtitle {
-  font-size: 28px;
+  font-size: 20px;
   font-weight: bold;
   font-family: "pixelmplus";
   color: #ffffff;
   line-height: 1;
   margin-bottom: 40px;
   letter-spacing: .08em;
+  filter: drop-shadow(3px 3px #1583fa);
 }
 
 .mv-text {
@@ -226,22 +235,35 @@ img {
   color: #000;
 }
 
+.pr-subtitle {
+  font-size: 20px;
+  font-style: italic;
+  font-family: "righteous";
+  padding-bottom: 50px;
+  color: #20375f;
+}
+
 .pr-text {
   font-size: 20px;
   line-height: 1.8;
   padding-bottom: 30px;
 }
 
+.pr-subtext {
+  font-size: 16px;
+  line-height: 1.8;
+  padding-bottom: 30px;
+}
+
 .pr-jacket {
   width: 60%;
-  margin: 50px auto;
+  margin: 50px auto 20px auto;
 }
 
 .pr-containter {
   margin: 0 auto 100px auto;
   text-align: center;
 }
-
 
 .if-soundcloud {
   width: 70%;
@@ -295,6 +317,10 @@ img {
 /*--------------------------------
  achievement
 ---------------------------------*/
+.backg {
+  background-image: url(../img/background2.png);
+}
+
 .achievement-list {
   display: flex;
   flex-wrap: wrap;
@@ -307,10 +333,10 @@ img {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
+  border-radius: 3px;
   width: 48%;
   margin-bottom: 50px;
-  background-color: #ffdd00;
-  border-radius: 5px;
+  background-color: #efefff;
   padding: 20px;
 }
 
@@ -386,10 +412,6 @@ img {
   text-align: center;
 }
 
-.links-item:not(:last-child) {
-  margin-right: 40px;
-}
-
 .links-text {
   margin-top: 10px;
 }
@@ -402,7 +424,7 @@ img {
  フッター
 ---------------------------------*/
 .footer {
-  height: 8vh;
+  padding: 30px;
   background-color: #222222;
 }
 
@@ -410,10 +432,6 @@ img {
   font-size: 14px;
   text-align: center;
   color: #fff;
-}
-
-.copyright p {
-  line-height: 8vh;
 }
 
 /*--------------------------------
@@ -565,6 +583,10 @@ img {
   .pr-title {
     font-size: 50px;
     margin-bottom: 40px;
+  }
+
+  .pr-subtitle {
+    font-size: 14px;
   }
 
   .pr-jacket {
