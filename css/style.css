@@ -319,6 +319,8 @@ img {
 ---------------------------------*/
 .backg {
   background-image: url(../img/background2.png);
+  background-size: cover;
+  background-position: 50%;
 }
 
 .achievement-list {
@@ -554,7 +556,7 @@ img {
 
   /*  メインビジュアル */
   .mv {
-    height: 80vh;
+    height: 90vh;
   }
 
   .mv-container {
@@ -641,6 +643,10 @@ img {
     margin-bottom: 0;
   }
 
+  .achievement h3 {
+    font-size: 17px;
+  }
+
   .achievement-name {
     margin-bottom: 5px;
   }
@@ -666,7 +672,7 @@ img {
   }
 
   .profile-body p:not(:last-child) {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
 
   /* フッター */
@@ -696,6 +702,10 @@ img {
 
   .if-youtube {
     width: 90%;
+  }
+
+  .copyright {
+    font-size: 11px;
   }
 }
 
